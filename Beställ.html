@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <!--Ändra bild.png och alt="Resturang" till restaurang namn-->
+        <a href="index.html"><img src="Logo.png" alt="EatIT" class="logo"></a>
+        <div class="menyer">
+            <div class="matmeny meny">
+                <a href="meny.html">Meny</a>
+            </div>
+            <div class="kontakt meny">
+                <a href="kontakt.html">Kontakta Oss</a>
+            </div>
+            <div class="boka meny">
+                <a href="boka.html">Boka</a>
+            </div>
+        </div>
+    </div>
+    <div class="Form">
+        <form method="post">
+            <div class="elem-group">
+                <label for="name">Ditt namn och efternamn</label>
+                <input type="text" id="name" name="visitor_name" placeholder="Ditt namn och efternamn" required>
+            </div>
+            <div class="elem-group">
+                <label for="email">din mail</label>
+                <input type="email" id="email" name="visitor_email" placeholder="din mail" required>
+            </div>
+            <div class="elem-group">
+                <label for="phone">Telefon nummer</label>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="Telefon" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div>
+            <textarea name="Beställning" cols="30" rows="10"></textarea>
+            <button type="submit">Boka</button>
+        </form>
+</body>
+
+</html>
