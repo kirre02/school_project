@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+
+/* Ändra bakgrund */
+
+.body {
+    background-image: url(bakgrund.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Kom ihåg att byta font-family också om ni bytt font */
+
+a,
+a:visited,
+a:link,
+td {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px 10px 30px 10px;
+    background: white;
+    z-index: 10;
+}
+
+.logo {
+    height: 130px;
+    margin: -40px;
+}
+
+.menyer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.meny {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.meny a {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.sida {
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.välkommen {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.huvudsida {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.extrameny {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 8px;
+    top: 40%;
+}
+
+.sida-kontakt,
+.sida-meny {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+td {
+    vertical-align: top;
+}
+
+#veckomatsedel::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 330px;
+    left: 50%;
+    display: block;
+}
+
+.priser,
+.avhämtning,
+.carte {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.tack {
+    text-align: center;
+}
+
+.footer a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.boka {
+    text-align: center;
+}
+
+.Form {
+    position: absolute;
+    text-align: center;
+    width: 35%;
+    left: 50%;
+    top: 400px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+input,
+select,
+textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    width: 100%;
+    padding: 10px;
+}
+
+div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+}
+
+textarea {
+    height: 250px;
+}
+
+button {
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    background: orange;
+    border-color: orange;
+    border: rounded;
+    color: white;
+    font-size: 1.25em;
+    border-radius: 4px;
+    cursor: pointer;
+}
