@@ -26,51 +26,50 @@
             </div>
         </div>
     </div>
-    <!--
-    <div class="boka">
-        <h2><a>För att boka i Göteborg kan du maila till</a>
-            <a href="mailto:fr.restaurang@eat.it">fr.restaurang@eat.it</a>
-        </h2>
-        <br><br>
-        <h2><a>För att boka i Kungsbacka kan du maila till
-            <a href="mailto:kb.restaurang@eat.it">kb.restaurang@eat.it</a>
-            </a>
-        </h2>
-    </div>-->
     <div class="Form">
         <form method="post">
             <div class="elem-group">
                 <label for="name">Ditt namn och efternamn</label>
                 <input type="text" id="name" name="visitor_name" placeholder="Ditt namn och efternamn" required>
             </div>
+            <br>
             <div class="elem-group">
                 <label for="email">din mail</label>
                 <input type="email" id="email" name="visitor_email" placeholder="din mail" required>
             </div>
+            <br>
             <div class="elem-group">
                 <label for="phone">Telefon nummer</label>
                 <input type="tel" id="phone" name="visitor_phone" placeholder="Telefon" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
             </div>
+            <br>
             <div class="elem-group inlined">
                 <label for="adult">Vuxna</label>
                 <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
             </div>
+            <br>
             <div class="elem-group inlined">
-                <label for="child">Unga</label>
+                <label for="child">Barn</label>
                 <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
             </div>
+            <br>
             <div class="elem-group inlined">
                 <label for="checkin-date">dag</label>
-                <input type="date" id="checkin-date" name="checkin" required>
+                <input type="date" id="dag" name="checkin" required>
             </div>
+            <br>
             <div class="elem-group inlined">
                 <label for="checkout-date">tid</label><br>
-                <input type="time" id="checkout-date" name="checkout" required>
+                <input type="time" id="tid" name="checkout" required>
             </div>
-            <button type="submit">Boka</button><br>
+            <button type="submit">Boka</button>
+            <br>
+            <br>
             <div>
-                <a href="beställ">ifall du vill beställa hem</a>
+                <a href="Beställ.html">ifall du vill beställa hem</a>
             </div>
+            <br>
+            <br>
         </form>
     </div>
 </body>

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--Ändra restaurang till företagets namn-->
+    <title>Resturang</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -24,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="Form">
+    <div class="Form2">
         <form method="post">
             <div class="elem-group">
                 <label for="name">Ditt namn och efternamn</label>
@@ -38,9 +40,12 @@
                 <label for="phone">Telefon nummer</label>
                 <input type="tel" id="phone" name="visitor_phone" placeholder="Telefon" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
             </div>
+            <br>
+            <label>Din order</label>
             <textarea name="Beställning" cols="30" rows="10"></textarea>
             <button type="submit">Boka</button>
         </form>
+    </div>
 </body>
 
 </html>

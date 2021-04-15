@@ -32,7 +32,7 @@ td {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 50px 10px 30px 10px;
+    padding: 20px 10px 30px 10px;
     background: white;
     z-index: 10;
 }
@@ -136,6 +136,16 @@ td {
 }
 
 .Form {
+    position: absolute;
+    text-align: center;
+    width: 35%;
+    left: 50%;
+    top: 470px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.Form2 {
     position: absolute;
     text-align: center;
     width: 35%;
