@@ -26,8 +26,8 @@
             </div>
         </div>
     </div>
-    <div class="Form">
-        <form method="post">
+    <div class="Form" action="mailto:erisve0801@skola.goteborg.se" enctype="text/plain">
+        <form method="post" id="form">
             <div class="elem-group">
                 <label for="name">Ditt namn och efternamn</label>
                 <input type="text" id="name" name="visitor_name" placeholder="Ditt namn och efternamn" required>
@@ -40,7 +40,7 @@
             <br>
             <div class="elem-group">
                 <label for="phone">Telefon nummer</label>
-                <input type="tel" id="phone" name="visitor_phone" placeholder="Telefon" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="Telefon" required>
             </div>
             <br>
             <div class="elem-group inlined">
@@ -55,22 +55,22 @@
             <br>
             <div class="elem-group inlined">
                 <label for="checkin-date">dag</label>
-                <input type="date" id="dag" name="checkin" required>
+                <input type="date" id="day" name="checkin" required>
             </div>
             <br>
             <div class="elem-group inlined">
                 <label for="checkout-date">tid</label><br>
-                <input type="time" id="tid" name="checkout" required>
+                <input type="time" id="time" name="checkout" required>
             </div>
             <button type="submit">Boka</button>
-            <br>
-            <br>
-            <div>
-                <a href="Beställ.html">ifall du vill beställa hem</a>
-            </div>
-            <br>
-            <br>
         </form>
+        <br>
+        <br>
+        <div>
+            <a href="Beställ.html">ifall du vill beställa hem</a>
+        </div>
+        <br>
+        <br>
     </div>
 </body>
 
