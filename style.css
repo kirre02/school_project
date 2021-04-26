@@ -118,7 +118,11 @@ td {
 
 .priser,
 .avhämtning,
-.carte {
+.carte,
+.Barnmatsedel,
+.Övrigt,
+.Lunchpizzor,
+.Ibaren {
     margin-top: 5%;
     text-align: center;
 }
