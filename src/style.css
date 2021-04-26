@@ -93,7 +93,7 @@ td {
 }
 
 .sida-kontakt,
-.sida-meny {
+.sida-meny{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
