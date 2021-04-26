@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Ändra restaurang till företagets namn-->
     <title>Resturang</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body class="FormBody">
     <div class="header">
         <!--Ändra bild.png och alt="Resturang" till restaurang namn-->
         <a href="index.html"><img src="Logo.png" alt="EatIT" class="logo"></a>
@@ -26,34 +26,55 @@
             </div>
         </div>
     </div>
-    <div class="Form2">
-        <br>
-        <form method="post">
+    <div class="Form" action="mailto:erisve0801@skola.goteborg.se" enctype="text/plain">
+        <form method="post" id="form">
             <div class="elem-group">
                 <label for="name">Ditt namn och efternamn</label>
                 <input type="text" id="name" name="visitor_name" placeholder="Ditt namn och efternamn" required>
             </div>
+            <br>
             <div class="elem-group">
                 <label for="email">din mail</label>
                 <input type="email" id="email" name="visitor_email" placeholder="din mail" required>
             </div>
+            <br>
             <div class="elem-group">
                 <label for="phone">Telefon nummer</label>
-                <input type="tel" id="phone" name="visitor_phone" placeholder="Telefon" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="Telefon" required>
             </div>
             <br>
-            <label>Din order</label>
-            <textarea name="Beställning" cols="30" rows="10"></textarea>
+            <div class="elem-group inlined">
+                <label for="adult">Vuxna</label>
+                <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+            </div>
+            <br>
+            <div class="elem-group inlined">
+                <label for="child">Barn</label>
+                <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+            </div>
+            <br>
+            <div class="elem-group inlined">
+                <label for="checkin-date">dag</label>
+                <input type="date" id="day" name="checkin" required>
+            </div>
+            <br>
+            <div class="elem-group inlined">
+                <label for="checkout-date">tid</label><br>
+                <input type="time" id="time" name="checkout" required>
+            </div>
             <button type="submit">Boka</button>
         </form>
         <br>
         <br>
         <div>
-            <a href="boka.html">ifall du vill boka bord</a>
+            <a href="Beställ.html">ifall du vill beställa hem</a>
         </div>
         <br>
         <br>
     </div>
 </body>
+
+<script>
+</script>
 
 </html>
