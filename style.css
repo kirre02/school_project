@@ -193,3 +193,8 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
+label{
+    font-family: 'Montserrat', sans-serif ;
+    font: bolder;
+}
